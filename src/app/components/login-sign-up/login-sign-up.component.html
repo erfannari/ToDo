@@ -1,0 +1,22 @@
+<div class="login">
+  <div class="title">Login</div>
+  <form class="form">
+    <label for="email" class="email-label">Email</label>
+    <input type="email" placeholder="Email" name="email">
+    <label for="password" class="password-label">Password</label>
+    <input id="passInput" type="password" placeholder="Password" name="password">
+    <img id="iconPass" (click)="showPassword()" src="{{showImg ? img2 : img1}}" alt="eye" class="iconPass">
+    <span class="forgot-password">
+      <a href="">Frogot Password ?</a>
+    </span>
+    <button routerLink="/profile" class="subBtn" type="submit">Login</button>
+    <div  class="login-option">
+      <img src="../../../assets/icons/google.png" alt="google">
+      <img src="../../../assets/icons/meta.png" alt="google">
+    </div>
+    <span class="sign-up"> 
+      Or Sign Up With
+      <a routerLink="/signUp"> Sign Up</a>
+    </span>
+  </form>
+</div>

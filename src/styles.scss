@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(assets/Fonts/poppins/Poppins-Regular.otf);
+}
+@font-face {
+  font-family: dosis;
+  src: url(assets/Fonts/Dosis/static/Dosis-Regular.ttf);
+}
+
+// ***** Color Pallet
+$nightStar: #061641;
+$midNight: #000128;
+$rawGold: #f5aa52;
+$deepOcean: #4a9cfd;
+$deepPurple: #5967bf;
+$tokyo: #e82e79;
+$smallSky: #1cb8fe;
+$chrome: #222c41;

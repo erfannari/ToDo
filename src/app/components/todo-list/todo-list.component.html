@@ -1,0 +1,30 @@
+<app-navbar></app-navbar>
+<div class="title">
+  ADD TODO
+</div>
+<div class="todos">
+  <form #authForm="ngForm" (submit)="addTodo()" class="form">
+    <select id="select" name="category_id" [(ngModel)]="category_id">
+      <option *ngFor=" let cat of categories" value="{{cat.id}}">{{cat.name}}</option>
+    </select>
+    <input type="date" name="estimation_date" [(ngModel)] ="estimation_date"/>
+    <input placeholder="Enter Todo..." type="text" name="title" id="todo" class="todo-input" [(ngModel)]="title" />
+    <input type="submit" name="submit" class="submit-btn" value="ADD">
+  </form>
+  <div class="todo-list">
+    <div *ngFor="let todo of todos ; let i = index" class="todo-item {{(todo.is_done ? 'done' : '')}}">
+      <span class="id">{{i + 1}}</span>
+      <span class="todo-content" (click)="toggleDone(i)">{{todo.title}}</span>
+      <span class="option">{{todo.category_id}}</span>
+      <span class="estimation">{{todo.estimation_date}}</span>
+      <img (click)="deleteTodo(i)" src="../../../assets/icons/trash.svg" alt="trash">
+    </div>
+  </div>
+</div>
+<!-- <div class="categories">
+  <div class="category-side">
+    <div routerLink="/todoList" class="category-type" *ngFor="let cat of categories">
+      <span>{{cat.category}}</span>
+    </div>
+  </div>  
+</div> -->

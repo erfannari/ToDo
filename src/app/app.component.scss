@@ -1,0 +1,17 @@
+.fluid {
+  background-color: #212121;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow: auto;
+  .hero {
+    background: linear-gradient(-75deg, #000128, #011857);
+    width: 40%;
+    border-radius: 30px;
+    text-align: center;
+    margin: 4.8rem 0;
+
+  }
+}
