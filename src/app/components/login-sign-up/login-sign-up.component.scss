@@ -43,18 +43,25 @@
       outline: none;
       letter-spacing: 1px;
       color: white;
-      margin-bottom: 1rem;
       opacity: 0.9;
+      width: 100%;
       &:focus {
         border-bottom: 2px solid $tokyo;
       }
     }
+    .input-eye {
+      position: relative;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
     .iconPass {
       height: 1.5rem;
       width: 1.5rem;
       position: absolute;
-      top: 32%;
-      right: 5%;
+      margin: 0.5rem;
       cursor: pointer;
     }
     .forgot-password {
@@ -120,6 +127,13 @@
           transform: scale(1.09);
         }
       }
+    }
+  }
+  .userInfo {
+    h3 {
+      color: white;
+      font-family: "dosis";
+      font-size: 1.2rem;
     }
   }
 }

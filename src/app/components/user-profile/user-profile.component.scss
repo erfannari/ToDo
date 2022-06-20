@@ -44,177 +44,60 @@
         color: white;
         letter-spacing: 1px;
       }
-      .location {
+      .account-email {
         display: flex;
         align-items: center;
-        img {
-          height: 1rem;
-        }
-        p {
-          color: white;
-          margin: 0.5rem 0;
-          padding: 0 0.5rem;
-          font-family: "dosis";
-          letter-spacing: 1px;
-          opacity: 0.8;
-        }
+        color: white;
+        margin: 0.5rem 0;
+        padding: 0 0.5rem;
+        font-family: "dosis";
+        letter-spacing: 1px;
       }
     }
-    .task-info {
-      width: 100%;
-      height: 15rem;
+
+    .edit {
+      display: flex;
+      justify-content: center;
       align-items: center;
-      margin: 1.5rem 0;
-      .task-side {
-        width: 50%;
-        height: 70%;
-        background-color: #ffffff10 !important;
-        -webkit-backdrop-filter: blur(12px);
-        backdrop-filter: blur(12px);
-        margin: 1rem;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        transition: all 0.4s ease-in-out;
+      .edit-btn,
+      .all-tasks {
+        padding: 0.5rem 1.3rem;
+        border-radius: 15px;
+        background: $deepOcean;
+        color: white;
+        font-family: "dosis";
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 0.9rem;
+        transition: all 0.5s ease-in-out;
+        margin: 0 0.5rem 1.5rem;
+        border: none;
+      }
+    }
+    .all-tasks {
+      background: green !important;
+    }
+    .logout-tasks {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .logout-btn {
+        padding: 0.5rem 1.3rem;
+        border-radius: 15px;
+        background: #ff0000;
+        color: white;
+        font-family: "dosis";
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 0.9rem;
+        transition: all 0.5s ease-in-out;
+        margin: 0 0.5rem 1.5rem;
+        border: none;
         &:hover {
-          transform: translateY(-10px);
+          transform: scale(1.06);
           cursor: pointer;
         }
-        p {
-          color: white;
-          font-family: Dosis;
-          font-size: 1.6rem;
-          font-weight: bold;
-          letter-spacing: 1px;
-          color: $tokyo;
-          margin: 0.2rem;
-        }
-        h5 {
-          font-family: "dosis";
-          margin: 0;
-          padding: 0;
-          font-size: 1rem;
-          color: white;
-          opacity: 0.7;
-          letter-spacing: 1px;
-        }
-        .progress {
-          background-color: transparent;
-          width: 80%;
-          height: .5rem;
-          border-radius: 50px;
-          border: 1px solid $tokyo;
-          .bar {
-            background-color: $tokyo;
-            border-radius: 50px;
-          }
-        }
-            .bar-value {
-              color: white;
-              font-family: Dosis;
-              font-size: 1rem;
-            }
       }
     }
   }
 }
-// .add {
-//   height: 5rem;
-//   position: relative;
-//   .plus {
-//     height: 3rem;
-//     width: 0;
-//     background-color: #ffffff10 !important;
-//     -webkit-backdrop-filter: blur(12px);
-//     backdrop-filter: blur(12px);
-//     border-radius: 50px;
-//     position: absolute;
-//     right: 1.5rem;
-//     display: flex;
-//     align-items: center;
-//     justify-content: flex-end;
-//     transition: all 0.4s ease-in-out;
-//     padding-left: 0.7rem;
-//     &:hover {
-//       width: 30%;
-//       span {
-//         opacity: 1;
-//         margin-right: 2rem;
-//       }
-//     }
-//     img {
-//       height: 3rem;
-//       width: 3rem;
-//       transition: all 0.3s ease-in-out;
-//       &:hover {
-//         transform: scale(1.08);
-//         cursor: pointer;
-//       }
-//     }
-//     span {
-//       font-family: "dosis";
-//       font-size: 1rem;
-//       line-height: 1.2;
-//       font-weight: bold;
-//       color: white;
-//       opacity: 0;
-//       transition: all 0.3s ease-in-out;
-//     }
-//   }
-// }
-// .task-info {
-//   width: 100%;
-//   height: 15rem;
-//   margin: 2rem 0;
-//   padding: 0 1rem;
-//   #left-task {
-//     border-right: 1px solid $deepPurple;
-//     border-top: 1px solid $deepPurple;
-//   }
-//   #right-task {
-//     border-left: 1px solid $deepPurple;
-//     border-top: 1px solid $deepPurple;
-//   }
-//   .task-progress {
-//     height: 100%;
-//     width: 50%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     flex-direction: column-reverse;
-//     transition: all 0.4s ease-in-out;
-//     span {
-//       display: flex;
-//       flex-direction: column;
-//       color: white;
-//       font-family: Dosis;
-//       font-size: 1.2rem;
-//       letter-spacing: 1px;
-//       transition: all 0.4s ease-in-out;
-//       .num {
-//         color: $tokyo;
-//         font-weight: bold;
-//         margin: 1rem 0 0.5rem 0;
-//         font-size: 1.6rem;
-//       }
-//     }
-//     &:hover {
-//       background-color: #ffffff10 !important;
-//       backdrop-filter: blur(12px);
-//       cursor: pointer;
-//       span,
-//       img {
-//         transform: scale(1.1);
-//         color: $tokyo;
-//         font-weight: bold;
-//       }
-//     }
-//   }
-//   img {
-//     height: 3rem;
-//     width: 3rem;
-//     transition: all 0.4s ease-in-out;
-//   }
-// }

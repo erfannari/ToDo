@@ -1,22 +1,27 @@
 <div class="login">
   <div class="title">Login</div>
-  <form class="form">
+  <form [ngModelOptions]="{standalone:true}" [(ngModel)]="userLogin"  (ngSubmit)="userEntry()" class="form">
     <label for="email" class="email-label">Email</label>
-    <input type="email" placeholder="Email" name="email">
+    <input type="email" placeholder="Email" [(ngModel)]="userLogin.email" name="email">
     <label for="password" class="password-label">Password</label>
-    <input id="passInput" type="password" placeholder="Password" name="password">
-    <img id="iconPass" (click)="showPassword()" src="{{showImg ? img2 : img1}}" alt="eye" class="iconPass">
+    <div class="input-eye">
+      <input id="passInput" type="password" placeholder="Password" [(ngModel)]="userLogin.password" name="password">
+      <img id="iconPass" (click)="showPassword()" src="{{showImg ? img2 : img1}}" alt="eye" class="iconPass">
+    </div>
     <span class="forgot-password">
-      <a href="">Frogot Password ?</a>
+      <a href="">Frogot Password?</a>
     </span>
-    <button routerLink="/profile" class="subBtn" type="submit">Login</button>
-    <div  class="login-option">
+    <input class="subBtn" type="submit" value="Login">
+    <div class="login-option">
       <img src="../../../assets/icons/google.png" alt="google">
       <img src="../../../assets/icons/meta.png" alt="google">
     </div>
-    <span class="sign-up"> 
+    <!-- <div class="error">
+      {{errorMessage}}
+    </div> -->
+    <span class="sign-up">
       Or Sign Up With
-      <a routerLink="/signUp"> Sign Up</a>
+      <a routerLink="/signUp">Sign Up</a>
     </span>
   </form>
 </div>

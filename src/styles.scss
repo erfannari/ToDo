@@ -4,11 +4,11 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-
 @font-face {
   font-family: poppins;
   src: url(assets/Fonts/poppins/Poppins-Regular.otf);
 }
+
 @font-face {
   font-family: dosis;
   src: url(assets/Fonts/Dosis/static/Dosis-Regular.ttf);
@@ -23,3 +23,65 @@ $deepPurple: #5967bf;
 $tokyo: #e82e79;
 $smallSky: #1cb8fe;
 $chrome: #222c41;
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+::-webkit-input-placeholder {
+  color: white;
+}
+
+//************** SCROLL BAR
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #ffffff10 !important;
+  backdrop-filter: blur(12px);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e82e79;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1cb8fe;
+}
+
+/* date picker style */
+::-webkit-datetime-edit {
+  padding: 0.5em;
+}
+::-webkit-datetime-edit-fields-wrapper {
+}
+::-webkit-datetime-edit-text {
+  color: #212121;
+  padding: 0 0.3em;
+  font-family: dosis, sans-serif;
+}
+::-webkit-datetime-edit-month-field {
+  color: #212121;
+}
+::-webkit-datetime-edit-day-field {
+  color: #212121;
+}
+::-webkit-datetime-edit-year-field {
+  color: #212121;
+}
+::-webkit-inner-spin-button {
+}
+::-webkit-calendar-picker-indicator {
+  margin-right: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+::-webkit-calendar-picker-indicator:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}

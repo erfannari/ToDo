@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+<div class="container-fluid">
+  <div class="profile">
+    <div class="img-section">
+      <img src={{user_image}} alt="me">
+    </div>
+    <div class="user-info">
+      <tr>
+        <td>{{user_name}}</td>
+        <td>{{user_email}}</td>
+      </tr>
+    </div>
+    <div class="profile-info">
+      <form>
+        <label for="name">Name</label>
+        <input type="text" placeholder="name" name="name">
+        <label for="Last-name">Last Name</label>
+        <input type="text" placeholder="Last Name" name="LastName">
+        <label for="email">Email</label>
+        <input type="email" placeholder="Email" name="email">
+        <label for="email">Change Image</label>
+        <input type="file" name="profile_pic">
+        <input class="subBtn" type="submit" value="Save">
+      </form>
+    </div>
+  </div>
+</div>

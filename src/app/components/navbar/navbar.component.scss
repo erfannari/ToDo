@@ -1,27 +1,42 @@
 @import "../../../styles.scss";
-.nav {
-  height: 4rem;
-  .container-fluid {
-    .handlers {
-      height: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      img {
-        height: 2rem;
-        width: 2rem;
-        margin: 0.5rem 0;
-        opacity: 0.9;
+.handlers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.7rem;
+  .back-icon {
+    height: 2rem;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  }
+  .nav-profile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row-reverse;
+    .profile-pic {
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      object-position: center;
+      object-fit: cover;
+      margin-left: 1rem;
+    }
+    h3 {
+      font-size: 1.1rem;
+      color: white;
+      letter-spacing: 1px;
+      font-family: "dosis";
+      font-weight: bold;
+      transition: all .3s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+        color: $tokyo;
+        cursor: pointer;
       }
-      .back-icon {
-        transition: all 0.3s ease-in-out;
-        &:hover {
-          transform: scale(1.08);
-          cursor: pointer;
-        }
-      }
-
     }
   }
 }
